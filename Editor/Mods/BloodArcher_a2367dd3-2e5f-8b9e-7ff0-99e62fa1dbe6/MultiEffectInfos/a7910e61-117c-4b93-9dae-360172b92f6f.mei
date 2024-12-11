@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="a7910e61-117c-4b93-9dae-360172b92f6f" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="BloodArrow_PrepareEffect">
+  <EffectInfo UUID="b95cfd2b-0caa-490a-b53b-cc6f1a596b2a" EffectResourceGuid="02985a8a-c660-4bae-5809-3c2981f71e9c" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_FX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" TargetTag="bb363e2e-9a11-4828-80cb-8409e347ff8a" />
+</MultiEffectInfos>

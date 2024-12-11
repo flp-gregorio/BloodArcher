@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c496009d-a970-44a3-b882-7ed3364dc271">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5be87644-e64b-4d36-a002-fa5045c07e37" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CurvingShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d99320b6-f240-4de4-92f5-12c0821965c8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b92e3fdgd026ge1e7gaf5bgb5c6bd6ca9ec" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09c0640bg0035g31f5g6ef0g9f5cf4547496" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll;OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsRangedWeaponAttack() and IsMiss()" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(STATUS_INTERRUPT_RANGEDATTACK_TARGET,100,1);ApplyStatus(SELF,STATUS_INTERRUPT_RANGEDATTACK_CASTER,100,1)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a0a4be9-ba04-4c5c-80f2-9a614d7461f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BloodShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a54a257-7c1a-4c6b-8682-dde8999c35b5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsRangedAttack() and not IsArrowSpells()() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
+        <field name="Properties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BloodShot:1;BloodShot_Charge:1" />
+        <field name="Stack" type="StringTableFieldDefinition" value="BloodShot" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER')  or HasStatus('SG_Disguise') or (HasWeaponProperty(WeaponProperties.Loading, GetAttackWeapon(context.Source)))" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fd9ba0a9-a967-40bd-a514-b65f78942e4c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BewitchingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a0a4be9-ba04-4c5c-80f2-9a614d7461f6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2416598dga819gc6c0gb689g5f74523db1a0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1bb97da7gd657g4281gb326gdea3823bf3d4" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot), Psychic)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Psychic,Magical); IF(not SavingThrow(Ability.Wisdom, BloodShotDC())):ApplyStatus(CONFUSION,100,3);" />
+        <field name="Stack" type="StringTableFieldDefinition" value="BloodShot" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Bewitching" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e8ba731-227c-48ba-9110-82b7bc4ca237" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BloodboilArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a0a4be9-ba04-4c5c-80f2-9a614d7461f6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he0d6e66cge581gd320g2fffg5727ac1e7cfe" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4b971e04gb33cgb935g4ee2g78f312e8a177" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3); DealDamage(LevelMapValue(BloodShot), Fire)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Fire, Magical);" />
+        <field name="Stack" type="StringTableFieldDefinition" value="BloodShot" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Bloodboil" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55b6c65a-78a9-44c4-a364-a519f203d968" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ConstrainingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a0a4be9-ba04-4c5c-80f2-9a614d7461f6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f7040d9g2290g1a9ag5b49gaf9d1feae14b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd7a7c02gefaeg0fabga70ag137f9fc74ee1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3); DealDamage(LevelMapValue(BloodShot), Acid)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h42f7f2b4gb68ag1432g6fd7gf090a34804f1" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Acid,Magical); ApplyStatus(CONSTRAINING_ARROW,100,10);" />
+        <field name="Stack" type="StringTableFieldDefinition" value="BloodShot" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Constraining" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b3aacfee-7665-4692-98c5-a6eeb2145b6b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ExilingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a0a4be9-ba04-4c5c-80f2-9a614d7461f6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf71d990dgacd4ge64eg4149g45e8fc5fcc79" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h57afc4dag4422g3a89g72e7g3244bbe31976" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Charisma, SourceBloodShotDC())):ApplyStatus(BANISHED,100,1);" />
+        <field name="Stack" type="StringTableFieldDefinition" value="BloodShot" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Banishment" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f2e2bf18-a190-4226-8923-340f73d77670" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ShadowbloodArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a0a4be9-ba04-4c5c-80f2-9a614d7461f6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha9d4b122gc537ga944gb617gfff5a32da695" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha259d18agd3c1gc02dg3eacg854274f2cc77" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Necrotic);Distance(5)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Necrotic,Magical);GROUND:CreateSurface(5,5,DarknessCloud);" />
+        <field name="Stack" type="StringTableFieldDefinition" value="BloodShot" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Shadowblood" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d016095-b4ef-4a05-9677-a4a5690fa227" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ThunderbloodArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a0a4be9-ba04-4c5c-80f2-9a614d7461f6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h83254b65gfd82g2d70g79c4g4627dd2cb5cc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h25fc8ea8gfec8g76a9g5635ga864cd109f9a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Thunder);Distance(5)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Thunder, Magical); Force(8, OriginToTarget); IF(not SavingThrow(Ability.Strength, BloodShotDC())):ApplyStatus(PRONE,100,1);" />
+        <field name="Stack" type="StringTableFieldDefinition" value="BloodShot" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Thunderblood" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0491179-805a-4cd7-b0fb-8621c6c68a19" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_WitheringArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a0a4be9-ba04-4c5c-80f2-9a614d7461f6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcce56fa7ge411ge89cg6f46gabeeb408f365" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf7317b87gee5eg0a15g5df3gac5ebb28cfb6" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Necrotic);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Necrotic,Magical); IF(not SavingThrow(Ability.Constitution, BloodShotDC())):ApplyStatus(WITHERING,100,2);" />
+        <field name="Stack" type="StringTableFieldDefinition" value="BloodShot" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Withering" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

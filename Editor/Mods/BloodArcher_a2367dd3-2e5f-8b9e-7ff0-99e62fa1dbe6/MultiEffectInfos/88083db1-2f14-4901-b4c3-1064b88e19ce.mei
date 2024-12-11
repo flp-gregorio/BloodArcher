@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="88083db1-2f14-4901-b4c3-1064b88e19ce" OwnerUUID="d047d9dc-f3aa-4715-a00a-011d82b5214b" Name="MAGIC_ARROW_StatusEffect">
+  <EffectInfo UUID="ce15fa7b-f9fc-4c30-bd55-7527cc6471a1" EffectResourceGuid="250a3996-3476-2d5f-a800-d23f556fb0e7" DetachSource="false" DetachTarget="false" KeepRotation="true" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_FX_01" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="67731907-4ad8-4be6-9326-d6f5b982140e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94a1a048-c70e-4f12-a44f-8b8291d24b0a" />
+        <field name="Name" type="NameTableFieldDefinition" value="_BloodShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)]" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BloodShot_Charge:1" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BloodShot_Charge:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Arrow" enumeration_type_name="CursorMode" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,;0b0dc35b-4953-45c0-a9eb-8d3fef5e798a,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="b5070f7b-feab-4a56-a2dd-2c4b015ac006" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="52db82b0-ea83-46a1-b66a-2f5e3b033ba2" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Small" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="BloodShot:1;" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand);" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Ammunition" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('BloodShot_Charge',1,0,false,false,context.Source) and not HasWeaponProperty(WeaponProperties.Loading, GetActiveWeapon(context.Source))" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Proj_Arr_Cast_ArrowOf_X_Slaying" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66d290bb-3ed7-4d91-91b2-6a8b9c4d7a9a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BewitchingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94a1a048-c70e-4f12-a44f-8b8291d24b0a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hccc5775dgc165ge314g3df3g4618d5e50dcd" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand);DealDamage(LevelMapValue(BloodShot),Psychic,Magical); IF(not SavingThrow(Ability.Wisdom, BloodShotDC())):ApplyStatus(CROWN_OF_MADNESS,100,1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(BloodShot),Psychic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Wisdom" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha9487569gd04fg4bb0geef2gc1d4b146984f" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot), Psychic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CONFUSION,100,2)" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="419408bb-1ceb-4282-9863-89cbb55ece08" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d1e79813-409f-4fb7-b7cc-07dcd3764f31" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="16d200bc-14f7-416d-ab7a-913bb450734c" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Bewitching" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="c89d7281-fb22-4c6f-b428-76a6513ecbc9" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b1d7c6f-d45b-4f3a-be2c-748fc23fc9fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodboilArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94a1a048-c70e-4f12-a44f-8b8291d24b0a" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);GROUND:CreateSurface(3,10,Fire);ApplyStatus(BURNING,100,1);" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand);DealDamage(LevelMapValue(BloodShot),Fire, Magical);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h60e87694ge659gd489g956dg5740a5e0f091" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0af38060g06a8geed0g450bgfbfce3f32e9b" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3); DealDamage(LevelMapValue(BloodShot), Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(BloodShot),Fire)" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="1ffed5dc-4c4b-4f31-b9cd-bd8a2cb9fb60" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b26abd87-14b7-4ed0-93d1-f424bc4fa236" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="41de42e1-56d0-4336-8b44-99fc38281525" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Bloodboil" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="7bff753a-f1f9-4a6c-8561-9cfc1f1b2c60" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Proj_Arr_Cast_Arrow_Of_Fire" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40123d3a-125c-4e8b-8c28-bc8f9e2d718b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConstrainingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94a1a048-c70e-4f12-a44f-8b8291d24b0a" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)]" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon),MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);DealDamage(LevelMapValue(BloodShot),Acid,Magical);ApplyStatus(CONSTRAINING_ARROW,100,10);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h85b5f8bbg167dg8ea3g2450g3540c3c25465" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80f9062eg6215ge4bcg840ag85293a56bf5c" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3); DealDamage(LevelMapValue(BloodShot), Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(BloodShot),Acid)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Strength" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RESTRAINED,100,10)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h151b976cgfc5bg7085g1553gfb9aa80a244b" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ba84c770-9175-4afa-b27b-509d0636d6cc" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="85559b54-6970-4d3a-8c68-0f661d25c60c" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Constraining" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Proj_Arr_Cast_ArrowOfAcid" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ba57df9b-e48d-4688-9982-6658a2fb38f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExilingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94a1a048-c70e-4f12-a44f-8b8291d24b0a" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)]" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Charisma, SourceBloodShotDC())):ApplyStatus(BANISHED,100,1);IF(ClassLevelHigherOrEqualThan(4,'Fighter')):DealDamage(2d6,Psychic,Magical)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdd0a0e72gb59cgcf21g9981gf3e67cdd011a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h06ffb737g40d9g7289g20b4g23ce997712ac" version="2" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Charisma" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BANISHED,100,1)" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="4b396c2f-c264-4aeb-8645-aa358d441571" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="cbd7dbb5-8f0f-4218-9c02-c54c830346aa" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_BanishingSmite_Ranged" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Proj_Arr_Cast_Arrow_Of_Lightning" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="5d225e4c-50f6-4f7b-9621-64ae3ace8ddc" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f267116e-10f1-4383-b8cb-2db356553847" />
+        <field name="Name" type="NameTableFieldDefinition" value="HuntingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94a1a048-c70e-4f12-a44f-8b8291d24b0a" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, BloodShotDC()) " />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1, MainRangedWeapon), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand); DealDamage(LevelMapValue(BlodShot_2), Piercing, Magical); IF(HasPassive('MagicArrow')):DealDamage(1d6, Piercing, Magical);" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="eb01c477-6f95-4675-b153-9594778701a5,7bff57fa-fd21-4ab3-9384-83fb14237690" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd523afb0gc24fg8227ga0e0gd0691422490a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1093a081g7268ga662g8cd6g2be448d5dfc5" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6, Piercing)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d6,Piercing)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Constitution" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Hunting" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Proj_Arr_Cast_Arrow_Barbed" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);DealDamage(max(1, MainRangedWeapon/2), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand); DealDamage(1d6/2, Piercing, Magical); IF(HasPassive('MagicArrow')):DealDamage(1d6/2, Piercing, Magical);" />
+        <field name="CastTargetHitDelay" type="IntegerTableFieldDefinition" value="100" />
+        <field name="Angle" type="IntegerTableFieldDefinition" value="120" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7b59a59-b544-4bb0-bc5c-a74d33dc907b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShadowbloodArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94a1a048-c70e-4f12-a44f-8b8291d24b0a" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand); DealDamage(LevelMapValue(BloodShot),Necrotic,Magical);GROUND:CreateSurface(5,5,DarknessCloud);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2fcdeebga467gad99g1522g1782ae7b67b1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8975a0dag6568g3277g3366g044980d65ba9" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Necrotic);Distance(5)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(BloodShot),Necrotic)" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="674a74bf-4399-4e8c-bb26-0bb4569bda35" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="e81aae12-0757-43c3-bc92-575796978ee2" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Shadowblood" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Proj_Arr_Cast_Arrow_Darkness" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="9c7a8a0e-62d7-4de1-a279-7aa4bfc40bbd" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6273eaa-674c-429f-a109-82521fab7937" />
+        <field name="Name" type="NameTableFieldDefinition" value="ThunderbloodArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94a1a048-c70e-4f12-a44f-8b8291d24b0a" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand);DealDamage(LevelMapValue(BloodShot),Thunder, Magical); Force(8, OriginToTarget); IF(not SavingThrow(Ability.Strength, BloodShotDC())):ApplyStatus(PRONE,100,1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc589e470gad3egddabg0074g3e13ea96664e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0be29d38g3110g7e85g501bg66757fb2e058" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Thunder);Distance(5)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(BloodShot),Thunder)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Strength" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="3fa5bd2b-7421-4193-91f4-7ef6e05ab4de" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b4286edf-799b-461c-8f56-0bb6b816512b" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Thunderblood" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Proj_Arr_Cast_ArrowOfDetonation" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="62c93179-7074-43f1-9fb9-71851615c279" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="809aae6b-8eb3-46a4-94c3-0b0ebc493055" />
+        <field name="Name" type="NameTableFieldDefinition" value="WitheringArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94a1a048-c70e-4f12-a44f-8b8291d24b0a" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand);DealDamage(LevelMapValue(BloodShot),Necrotic,Magical); IF(not SavingThrow(Ability.Constitution, BloodShotDC())):ApplyStatus(WITHERING,100,2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h36825b7cga4beg6e85g9a9ega35458280bc8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6e8c2567gfe19g5a54gac44g91d361a365b4" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Necrotic);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(BloodShot),Necrotic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Constitution" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CURSE_ATTACK,100,2)" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="4f484735-30d4-4ebf-aae5-bd1460e7440d" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="eb0be77f-6358-4d72-b42b-856045f9631a" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Withering" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Proj_Arr_Cast_ArrowOfWrathsEmbrace" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="9c7a8a0e-62d7-4de1-a279-7aa4bfc40bbd" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="93bb7833-52cd-49ba-be01-fe5b45544d86" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandBloodShot" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h33cb8c01g9442ge3c1ge6b2g4a8cf63c0738" version="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasWeaponProperty(WeaponProperties.Loading, GetActiveWeapon(context.Source))" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)]" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="a7910e61-117c-4b93-9dae-360172b92f6f" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="7f363085-5d56-4021-9d08-7e8cf3e01af7,6c0c8931-0f70-4ab6-8e8d-5d182ff49f39,82020a66-d0f2-4fdb-b2e8-634371708a9f" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="RangedMainWeaponRange" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack);CastOffhand[Attack(AttackType.RangedOffHandWeaponAttack)]" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand);CastOffhand[DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand)]" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_MainHandAttack" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0bcc2bafg9b49g79dfg5566g003271c0a831" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Bow" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" value="CastOffhand" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,;0b0dc35b-4953-45c0-a9eb-8d3fef5e798a,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,:4a789a60-04b8-4a26-b476-65cf26ca558b,,;a11b8bcb-ba24-417a-aa86-4e4379c41ee2,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Ammunition" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a9e22a2-e966-409c-be69-d9c8c9731819" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandBloodShot_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="93bb7833-52cd-49ba-be01-fe5b45544d86" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:0" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Bloodshots"/>
+                    <attribute id="Passives" type="LSString" value="BewitchingArrow, BloodboilArrow, BloodshardArrow, ConstrainingArrow, ExilingArrow, HuntingArrow, ShadowbloodArrow, ThunderbloodArrow, WitheringArrow"/>
+                    <attribute id="UUID" type="guid" value="ac71b00d-e434-4a19-8b2c-14ba6f57df62"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

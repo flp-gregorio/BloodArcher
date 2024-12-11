@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="1ffed5dc-4c4b-4f31-b9cd-bd8a2cb9fb60" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="Bloodboil_PrepareEffect">
+  <EffectInfo UUID="4e527fdb-b3dd-4cb1-ab5b-01b4162852e5" EffectResourceGuid="fd5c8436-42ec-e39d-3a3b-ec5edd39f6c1" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_FX_01" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

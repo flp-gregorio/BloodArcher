@@ -1,0 +1,43 @@
+function BloodShotDC()
+    return 8 + context.Source.ProficiencyBonus + GetModifier(context.Source.Constitution)
+end
+
+function BloodShotAmmo()
+    local IntelligenceModifier = GetModifier(context.Source.Constitution)
+    local ammo = 1 + IntelligenceModifier
+    return ammo
+end
+
+function ConstitutionModifierEqualsTo(value)
+    return ConditionResult(GetModifier(context.Source.Constitution) == value)
+end
+
+function SourceBloodShotDC()
+    -- Get the caster's proficiency bonus
+    local proficiencyBonus = context.Source.ProficiencyBonus
+
+    -- Get the caster's intelligence modifier
+    local abilityModifier = GetModifier(context.Source.Constitution)
+    
+    -- Calculate the DC using the standard formula: 8 + proficiency + ability modifier
+    local customDC = 8 + proficiencyBonus + abilityModifier
+    
+    return customDC
+end
+
+function IsArrowSpells()
+    return SpellId('Projectile_BewitchingArrow') | 
+           SpellId('Projectile_BloodboilArrow') | 
+           SpellId('Zone_BloodshardArrow') | 
+           SpellId('Projectile_ConstrainingArrow') | 
+           SpellId('Projectile_ExilingArrow') | 
+           SpellId('Projectile_HuntingArrow') | 
+           SpellId('Projectile_ShadowbloodArrow') | 
+           SpellId('Projectile_ThunderbloodArrow') | 
+           SpellId('Projectile_WitheringArrow')
+end
+
+function MainDamageType()
+    local type = ConditionResult(context.HitDescription.MainDamageType)
+    return type
+end

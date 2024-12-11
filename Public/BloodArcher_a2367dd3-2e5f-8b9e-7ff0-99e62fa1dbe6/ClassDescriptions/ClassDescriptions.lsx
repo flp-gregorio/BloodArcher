@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="ClassDescriptions">
+        <node id="root">
+            <children>
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="TranslatedString" handle="heb10c10cg0468g669bgacdcg709c78dc0199" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb6af6f2dg66d3g8309g6213g5407d41a7a3b" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MulticlassSpellcasterModifier" type="double" value="0.34000000000000002"/>
+                    <attribute id="Name" type="FixedString" value="BloodArcher"/>
+                    <attribute id="ParentGuid" type="guid" value="721dfac3-92d4-41f5-b773-b7072a86232f"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="55f39606-741b-40cb-a17f-b6be6346fd27"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Fighter"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="SpellList" type="guid" value="0e33c4d4-d784-4cfb-852e-e510dd100ef2"/>
+                    <attribute id="UUID" type="guid" value="623dcc44-c9e1-46af-a873-0973fb968818"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

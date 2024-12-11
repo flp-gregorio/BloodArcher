@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3e76b74c-a5ae-4268-944a-aa9c31e2185e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb7cae16-9bb3-494b-9ddf-6910a801c99a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodArcherAnatomy" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbb10d96dg399dg1929g35a2g425e0b7704d2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb67092dcg4ef6gc984g957bgcec98b14489e" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Disease);Resistance(Poison, Resistant);Tag(POISONED_ADV)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="584bbd01-d959-4e32-bfea-4585204f4976" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodShotUnlock" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19ae982cg776dg3fc4gf00ag5d07494befda" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h37765162g67aegd5c1g429dg4fc05ee15a74" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(ConstitutionModifierEqualsTo(0)):ActionResource(BloodShot, 2, 0); IF(ConstitutionModifierEqualsTo(1)):ActionResource(BloodShot, 2, 0); IF(ConstitutionModifierEqualsTo(2)):ActionResource(BloodShot, 3, 0); IF(ConstitutionModifierEqualsTo(3)):ActionResource(BloodShot, 4, 0); IF(ConstitutionModifierEqualsTo(4)):ActionResource(BloodShot, 5, 0); IF(ConstitutionModifierEqualsTo(5)):ActionResource(BloodShot, 6, 0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9ae141c7-4ef0-438a-a2b2-3a9aa1fe2f1f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConstrainingArrow_Moviment_Passive" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, CONSTRAINING_ARROW_DAMAGE,100,0);ApplyStatus(SELF, CONSTRAINING_ARROW_DAMAGE_IMMUNITY,100,0);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnMovedDistance" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22224b81-5401-4085-986d-7311668b24d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodArrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc6c2de62gc99fgc9e8gf8c9g9c3843efec44" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsArrowSpells() and not IsDamageTypePiercing()):DamageBonus(max(1,ConstitutionModifier));IF(not IsArrowSpells() and IsRangedWeaponAttack() and not IsSpell()):DamageBonus(ConstitutionModifier,Piercing);AttackSpellOverride(Projectile_MainHandBloodShot, Projectile_MainHandAttack)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1aba4608gf36bgfbdbg7c93gb6c01fe087c1" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_LastHope" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(RangedMainHand,MAGIC_ARROW,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="91fda41a-e3cb-4ba9-819e-381c9edc99a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodRecall" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c1a3462ge489g88abg1560gc130480d00aa" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha4239984g8e04geed0gd76cge3a3da3c3c77" version="4" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_CurvingShot);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Mindstruck" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0b53107c-08f1-42c9-8dc8-ac6594f2185b" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodCreation" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h681bd8cbg6ec9g99efgb306g40ec34d04956" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he549840eg6c65g23feg1a40ge485f0213777" version="3" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarGodsBlessing" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10 + ConstitutionModifier,Necrotic)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BloodCreation)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8f1284b-4d4e-4786-b63d-4f451b0658cd" />
+        <field name="Name" type="NameTableFieldDefinition" value="BewitchingArrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haa43659eg6aedg6413g6d08g7e881b49262a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6f7235d9gc148ga41ag23b0g8fd28e0da1cd" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot), Psychic)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_BewitchingArrow);UnlockSpell(Projectile_BewitchingArrow)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66aeb2e0-fe01-4eca-ba11-ffed5f96910d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodboilArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8f1284b-4d4e-4786-b63d-4f451b0658cd" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4008a095gccd1gf36cg202bg3fa8a4327187" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h201ef321g0fc5g4d7dg7462gcad4c1b4da8b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3); DealDamage(LevelMapValue(BloodShot), Fire)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_BloodboilArrow);UnlockSpell(Projectile_BloodboilArrow)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_BloodboilArrow')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IgnoreResistance(Fire,Resistant)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1e8f920-3133-40b5-b4cd-d3dd03935efd" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodshardArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8f1284b-4d4e-4786-b63d-4f451b0658cd" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0ff46c40g6b54g5bb8g4c7bg411fe7f9a854" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h365dbe89gfdf2ge12eg1aa2g688b70746485" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6, Piercing)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_BloodshardArrow)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="90f537ca-9e58-4f1a-bfb3-9de66931fb0c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConstrainingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8f1284b-4d4e-4786-b63d-4f451b0658cd" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hccdc3167gd31bg4c1dged78g90aeab532aec" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h33452f2bg44f3g581cg2b18g763be4863036" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3); DealDamage(LevelMapValue(BloodShot), Acid)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ConstrainingArrow);UnlockSpell(Projectile_ConstrainingArrow)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1733a124-24b4-48a4-9216-27f4bc77606f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExilingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8f1284b-4d4e-4786-b63d-4f451b0658cd" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h617d39e4gb956g43c3gcd57g58f0f3fd3eed" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h498a22bcg7550g5166g6a1dge39d00f61293" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ExilingArrow);UnlockSpell(Projectile_ExilingArrow)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a72a12ce-e640-48ea-975a-f9635603062c" />
+        <field name="Name" type="NameTableFieldDefinition" value="HuntingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8f1284b-4d4e-4786-b63d-4f451b0658cd" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb4ea5ce1ge4f0gb725g504dgb83dccb8d637" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h714c0675g208fgbb87g94b3g9a1772755bd1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6, Piercing)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_HuntingArrow)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d5abdeb-8d7c-4011-ac64-93b42fdaa133" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShadowbloodArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8f1284b-4d4e-4786-b63d-4f451b0658cd" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f1725e6gc6e2g75f8g0ab4g8e9602bd1da6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h81a88fcegba0bgc686gd68dg9072634de711" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Necrotic);Distance(5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ShadowbloodArrow);UnlockSpell(Projectile_ShadowbloodArrow)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="936bf75c-13da-420e-829b-878bc01e9f05" />
+        <field name="Name" type="NameTableFieldDefinition" value="ThunderbloodArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8f1284b-4d4e-4786-b63d-4f451b0658cd" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h64db9594g5354ga38cg014cg62fa45341209" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h491a0ec7g03e8gb841gc25cgd18dc1e2afb7" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Thunder);Distance(5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ThunderbloodArrow);UnlockSpell(Projectile_ThunderbloodArrow)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb71ff42-5867-4b20-aa86-c9c6366e27f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="WitheringArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8f1284b-4d4e-4786-b63d-4f451b0658cd" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6ddf88f3g0a9fgc88ag5afagced82175033b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hebb49de1g89c6ge66eg2c9cgf463795c283a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BloodShot),Necrotic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_WitheringArrow);UnlockSpell(Projectile_WitheringArrow)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d44afa3f-a4ff-467a-a2ac-96aed9acec9e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Passive_Ranged_Attack_OnCastResolved" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(STATUS_INTERRUPT_CASTER_TRIGGER,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6435fe6c-4c77-42aa-8818-84f752ea13a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Passive_Ranged_Attack_OnStatusApply" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h89a1cc19gcf5dg742egde39g5bc6eb62236f" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('STATUS_INTERRUPT_TARGET_TRIGGER')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,STATUS_INTERRUPT_RANGEDATTACK_CASTER);UseSpell(Projectile_MainHandBloodShot_0,true,true,true)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="943d1e9c-b0e6-499a-b86e-a64d7cdd9843" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConstrainingArrow_Moviment_Passive_Technical" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, CONSTRAINING_ARROW_TECH,100,1)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

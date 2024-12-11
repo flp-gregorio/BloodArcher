@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="4fcdf163-88be-40b5-bf02-680ac5d776d9">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb592a08-6205-489e-9135-a644e547b198" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodshardArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="332bc514-b92d-4e59-b428-9e342534b972" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)]" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value=" not SavingThrow(Ability.Dexterity, BloodShotDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainWeaponDamageType, Magical); DealDamage(LevelMapValue(BlodShot_2), Piercing, Magical);IF(HasPassive('MagicArrow')):DealDamage(1d6, Piercing, Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon/2, MainWeaponDamageType, Magical); DealDamage(LevelMapValue(BlodShot_2)/2, Piercing, Magical); IF(HasPassive('MagicArrow')):DealDamage(1d6/2, Piercing, Magical);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h585713cbg4a3fg6d71g9718gdba5d5900b7e" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainWeaponDamageType); DealDamage(2d6, Piercing)" />
+        <field name="Shape" type="StringTableFieldDefinition" value="Square" />
+        <field name="Range" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Base" type="IntegerTableFieldDefinition" value="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BloodShot:1;BloodShot_Charge:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,;0b0dc35b-4953-45c0-a9eb-8d3fef5e798a,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="1c1e4ef1-876f-44bd-849c-11b682463db6" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="51b2a66d-4d2b-47c0-aff4-774b53cf5841" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="324202d7-51df-40e1-b873-4fd42591e6e9" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="DeathType" type="EnumerationTableFieldDefinition" value="Physical" enumeration_type_name="Death Type" version="1" />
+        <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Blood" enumeration_type_name="Surface Type" version="1" />
+        <field name="SurfaceLifetime" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SurfaceGrowStep" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SurfaceGrowInterval" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_BloodShot_Bloodshard" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6ac07638g3d6eg3b4cg2892g1ff7c1ce703a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6, Piercing)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CastSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Bow" enumeration_type_name="CursorMode" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Ammunition" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="5074976a-0cd3-4ed7-aa69-24df37891b7c" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('BloodShot_Charge',1,0,false,false,context.Source) and not HasWeaponProperty(WeaponProperties.Loading, GetActiveWeapon(context.Source))" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

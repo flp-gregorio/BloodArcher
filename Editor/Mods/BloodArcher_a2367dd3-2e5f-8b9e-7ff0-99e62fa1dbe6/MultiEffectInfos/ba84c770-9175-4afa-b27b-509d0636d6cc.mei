@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="ba84c770-9175-4afa-b27b-509d0636d6cc" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="Constraining_PrepareEffect">
+  <EffectInfo UUID="f0efbf21-dace-4103-9628-97ccd4a97248" EffectResourceGuid="05a83a1c-23e7-72a1-d860-59e7ae247dbc" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_FX_01" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

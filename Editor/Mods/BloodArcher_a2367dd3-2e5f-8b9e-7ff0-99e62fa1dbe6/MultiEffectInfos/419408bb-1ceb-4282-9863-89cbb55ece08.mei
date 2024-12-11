@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="419408bb-1ceb-4282-9863-89cbb55ece08" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="Bewitching_Prepare">
+  <EffectInfo UUID="fd1ab23d-2315-49c8-8e06-455a9b616a79" EffectResourceGuid="8cf219f5-793d-a972-fe17-e87a725a07b5" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_FX_01" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

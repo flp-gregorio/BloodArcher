@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="bfa22a59-fd65-4e35-ae0f-ac960c3b5fd2">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+        <field name="UUID" type="IdTableFieldDefinition" value="419c8edd-fb11-4f83-a473-f8c3ddbfae18" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb675d7d9gdf14geefbg3504ga0e93980fae4" version="1" />
+        <field name="Type" type="FixedStringTableFieldDefinition" value="BloodArcher" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d253215gaf06g7d48g2d2bge5bb41fd7e01" version="1" />
+        <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="4d9ec8b6-6230-43fd-bc1f-03a2e60f6437" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_115" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e468a5dc-f904-4050-9913-9dd83645ee8d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf3c9f01bgf38ag59fcgc859g037bf8f20f64" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h30dd44d7gdf0egbcc2g0cd4gee14a8f17804" version="3" />
+        <field name="SelectorId" type="FixedStringTableFieldDefinition" value="BloodArcher" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_116" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8f1ce6a5-a0b9-406c-9bc9-fdc525896906" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h38ab54acge68cgd16fgc692g121e67ce13dc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h184fa705g65aeg941egc8a0gfe2dd4f2bd6f" version="1" />
+        <field name="Type" type="FixedStringTableFieldDefinition" value="ActionResource" />
+        <field name="ParamMatch" type="FixedStringTableFieldDefinition" value="0:BloodShot_Charge" />
+        <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="55f39606-741b-40cb-a17f-b6be6346fd27" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

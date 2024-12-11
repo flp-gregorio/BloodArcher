@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="11fa382c-a1d2-45ba-913c-b13062365ce8">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac71b00d-e434-4a19-8b2c-14ba6f57df62" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bloodshots" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BewitchingArrow, BloodboilArrow, BloodshardArrow, ConstrainingArrow, ExilingArrow, HuntingArrow, ShadowbloodArrow, ThunderbloodArrow, WitheringArrow" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

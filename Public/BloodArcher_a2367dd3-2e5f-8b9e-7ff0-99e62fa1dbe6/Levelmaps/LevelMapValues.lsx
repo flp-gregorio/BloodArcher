@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <node id="LevelMapSeries">
+                    <attribute id="FallbackValue" type="LSString" value="2d6"/>
+                    <attribute id="Level1" type="LSString" value="2d6"/>
+                    <attribute id="Level18" type="LSString" value="4d6"/>
+                    <attribute id="Level3" type="LSString" value="2d6"/>
+                    <attribute id="Name" type="FixedString" value="BloodShot"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="623dcc44-c9e1-46af-a873-0973fb968818"/>
+                    <attribute id="UUID" type="guid" value="47e46e7b-a44f-4682-9c51-1900a12ad936"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="FallbackValue" type="LSString" value="1d6"/>
+                    <attribute id="Level1" type="LSString" value="1d6"/>
+                    <attribute id="Level18" type="LSString" value="2d6"/>
+                    <attribute id="Level3" type="LSString" value="1d6"/>
+                    <attribute id="Name" type="FixedString" value="BlodShot_2"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="623dcc44-c9e1-46af-a873-0973fb968818"/>
+                    <attribute id="UUID" type="guid" value="56bb7914-770b-4922-9d1b-53ef2f8e4fbe"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="FallbackValue" type="LSString" value="0"/>
+                    <attribute id="Level1" type="LSString" value="0"/>
+                    <attribute id="Level18" type="LSString" value="2d6"/>
+                    <attribute id="Name" type="FixedString" value="BlodShot_3"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="623dcc44-c9e1-46af-a873-0973fb968818"/>
+                    <attribute id="UUID" type="guid" value="0b4e82dd-d6d9-4d0d-a579-fd43001a8b78"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

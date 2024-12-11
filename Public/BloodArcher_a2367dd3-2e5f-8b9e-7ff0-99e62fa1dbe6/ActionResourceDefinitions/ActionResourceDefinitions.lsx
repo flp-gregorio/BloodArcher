@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="ActionResourceDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h0b00738bgd190g295dg223ag4a95850ae2a1" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0cb352ebgac42ge4f7ga22dgd5acb29094da" version="1"/>
+                    <attribute id="Error" type="TranslatedString" handle="h5d4c5966g837dg1562gc21ag9714cf77d043" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="BloodShot"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="28eb821a-0ddc-4b43-a409-f9b3b9367d53"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3b4c7603g5290g81d9gd0ccgd7b6106bce51" version="1"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="BloodShot_Charge"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="83c7cf42-c0a4-48a0-8043-704f25788936"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

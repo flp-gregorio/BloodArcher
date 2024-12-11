@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Fighter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
+                    <attribute id="UUID" type="guid" value="87a09faf-34cc-45ef-bb1d-18846490975d"/>
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="623dcc44-c9e1-46af-a873-0973fb968818"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="BloodArcher"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="55f39606-741b-40cb-a17f-b6be6346fd27"/>
+                    <attribute id="UUID" type="guid" value="d2ac8930-7621-4fd3-98c5-dcfcdd85a6ff"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="BloodArcher"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="55f39606-741b-40cb-a17f-b6be6346fd27"/>
+                    <attribute id="UUID" type="guid" value="6b5caed5-4c31-4e45-8236-1289b5e33a47"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(BloodShot, 1, 0);ActionResource(BloodShot_Charge, 1, 0);ProficiencyBonus(Skill,Arcana);"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="BloodArcher"/>
+                    <attribute id="PassivesAdded" type="LSString" value="BloodShotUnlock;BloodArcherAnatomy"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ac71b00d-e434-4a19-8b2c-14ba6f57df62,3,BloodArcher)"/>
+                    <attribute id="TableUUID" type="guid" value="55f39606-741b-40cb-a17f-b6be6346fd27"/>
+                    <attribute id="UUID" type="guid" value="6fa858b2-3e99-439e-8215-db683f5d2448"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="BloodArcher"/>
+                    <attribute id="PassivesAdded" type="LSString" value="BloodArrow"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="55f39606-741b-40cb-a17f-b6be6346fd27"/>
+                    <attribute id="UUID" type="guid" value="eac53675-02d8-4c14-b5fd-05ca65c0d78f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="BloodArcher"/>
+                    <attribute id="PassivesAdded" type="LSString" value="BloodRecall"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ac71b00d-e434-4a19-8b2c-14ba6f57df62,1,BloodArcher)"/>
+                    <attribute id="TableUUID" type="guid" value="55f39606-741b-40cb-a17f-b6be6346fd27"/>
+                    <attribute id="UUID" type="guid" value="c74e9029-b224-4d0d-b397-89777c17979f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="BloodArcher"/>
+                    <attribute id="PassivesAdded" type="LSString" value="BloodCreation"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ac71b00d-e434-4a19-8b2c-14ba6f57df62,1,BloodArcher)"/>
+                    <attribute id="TableUUID" type="guid" value="55f39606-741b-40cb-a17f-b6be6346fd27"/>
+                    <attribute id="UUID" type="guid" value="89e486d9-f4be-432c-b41d-76301de34f28"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="BloodArcher"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ac71b00d-e434-4a19-8b2c-14ba6f57df62,1,BloodArcher)"/>
+                    <attribute id="TableUUID" type="guid" value="55f39606-741b-40cb-a17f-b6be6346fd27"/>
+                    <attribute id="UUID" type="guid" value="9f197127-65df-458b-a94f-e5606b338f44"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

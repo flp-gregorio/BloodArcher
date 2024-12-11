@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="3fa5bd2b-7421-4193-91f4-7ef6e05ab4de" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="Thunderblood_PrepareEffect">
+  <EffectInfo UUID="863caad7-d760-48f0-b812-de4a7fe10130" EffectResourceGuid="abfb81ce-8f7b-344e-c0dc-4dc4777bb7f7" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_FX_01" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

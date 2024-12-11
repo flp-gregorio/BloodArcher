@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="2d56f038-865d-492c-b434-c2b3e821cc13">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="BloodShot" />
+        <field name="UUID" type="IdTableFieldDefinition" value="47e46e7b-a44f-4682-9c51-1900a12ad936" />
+        <field name="Level3" type="StringTableFieldDefinition" value="2d6" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="623dcc44-c9e1-46af-a873-0973fb968818" />
+        <field name="FallbackValue" type="StringTableFieldDefinition" value="2d6" />
+        <field name="Level18" type="StringTableFieldDefinition" value="4d6" />
+        <field name="Level1" type="StringTableFieldDefinition" value="2d6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="BlodShot_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="56bb7914-770b-4922-9d1b-53ef2f8e4fbe" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="623dcc44-c9e1-46af-a873-0973fb968818" />
+        <field name="FallbackValue" type="StringTableFieldDefinition" value="1d6" />
+        <field name="Level3" type="StringTableFieldDefinition" value="1d6" />
+        <field name="Level18" type="StringTableFieldDefinition" value="2d6" />
+        <field name="Level1" type="StringTableFieldDefinition" value="1d6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="BlodShot_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0b4e82dd-d6d9-4d0d-a579-fd43001a8b78" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="623dcc44-c9e1-46af-a873-0973fb968818" />
+        <field name="FallbackValue" type="StringTableFieldDefinition" value="0" />
+        <field name="Level18" type="StringTableFieldDefinition" value="2d6" />
+        <field name="Level1" type="StringTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

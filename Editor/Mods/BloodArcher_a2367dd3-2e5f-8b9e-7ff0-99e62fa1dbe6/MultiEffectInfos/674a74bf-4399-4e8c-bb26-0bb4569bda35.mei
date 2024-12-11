@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="674a74bf-4399-4e8c-bb26-0bb4569bda35" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="Shadowblood_PrepareEffect">
+  <EffectInfo UUID="b16eb9f2-f0cb-4a60-9370-7c64f1d61e25" EffectResourceGuid="df9862f7-0f24-4ed1-61be-6440e998b2d4" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_FX_01" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

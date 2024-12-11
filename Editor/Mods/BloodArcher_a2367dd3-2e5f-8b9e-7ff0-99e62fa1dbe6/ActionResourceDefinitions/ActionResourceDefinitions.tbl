@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="1f196a87-8d84-424d-badc-a3d11c5b8d23">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="28eb821a-0ddc-4b43-a409-f9b3b9367d53" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="BloodShot" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="ShortRest" />
+        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cb352ebgac42ge4f7ga22dgd5acb29094da" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0b00738bgd190g295dg223ag4a95850ae2a1" version="1" />
+        <field name="Error" type="TranslatedStringTableFieldDefinition" handle="h5d4c5966g837dg1562gc21ag9714cf77d043" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_27" />
+        <field name="UUID" type="IdTableFieldDefinition" value="83c7cf42-c0a4-48a0-8043-704f25788936" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="BloodShot_Charge" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b4c7603g5290g81d9gd0ccgd7b6106bce51" version="1" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Turn" />
+        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="False" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

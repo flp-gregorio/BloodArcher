@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="5074976a-0cd3-4ed7-aa69-24df37891b7c" OwnerUUID="19bb34b2-e9f3-4be4-96bf-75743450321c" Name="BloodshardArrow_BeamEffect">
+  <EffectInfo UUID="fa53fd12-ee64-449e-9802-fb97c0440037" EffectResourceGuid="daab7ab7-86ec-4de9-36cb-107c4c828884" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="true" UseDistance="true" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Source" Enabled="true" StartTextKey="Cast" DamageType="None" VerbalIntent="None" SourceBone="Dummy_BodyFX" TargetBone="Dummy_BodyFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

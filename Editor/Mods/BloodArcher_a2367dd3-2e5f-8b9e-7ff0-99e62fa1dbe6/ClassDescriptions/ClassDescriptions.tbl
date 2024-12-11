@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a86b6e82-0a7f-47cb-bff1-a0a6d161fa30">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="623dcc44-c9e1-46af-a873-0973fb968818" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="721dfac3-92d4-41f5-b773-b7072a86232f" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="BloodArcher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb6af6f2dg66d3g8309g6213g5407d41a7a3b" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="55f39606-741b-40cb-a17f-b6be6346fd27" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb10c10cg0468g669bgacdcg709c78dc0199" version="1" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Dexterity" enumeration_type_name="Ability" version="1" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Fighter" />
+        <field name="MulticlassSpellcasterModifier" type="FloatTableFieldDefinition" value="0.34" />
+        <field name="SpellList" type="GuidObjectTableFieldDefinition" value="0e33c4d4-d784-4cfb-852e-e510dd100ef2" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

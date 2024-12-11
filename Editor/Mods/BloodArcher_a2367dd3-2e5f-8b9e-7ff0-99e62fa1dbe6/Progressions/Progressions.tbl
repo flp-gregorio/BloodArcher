@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="53912403-fe14-4ce0-89aa-96acb1dee21a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_15" />
+        <field name="UUID" type="IdTableFieldDefinition" value="87a09faf-34cc-45ef-bb1d-18846490975d" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="ba4e707e-4bbd-4630-963b-ce2f2947f971" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Fighter" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="623dcc44-c9e1-46af-a873-0973fb968818" />
+        <field name="AllowImprovement" type="BoolTableFieldDefinition" value="False" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_95" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d2ac8930-7621-4fd3-98c5-dcfcdd85a6ff" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="55f39606-741b-40cb-a17f-b6be6346fd27" />
+        <field name="FSName" type="StringTableFieldDefinition" value="BloodArcher" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_94" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6b5caed5-4c31-4e45-8236-1289b5e33a47" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="55f39606-741b-40cb-a17f-b6be6346fd27" />
+        <field name="FSName" type="StringTableFieldDefinition" value="BloodArcher" />
+        <field name="Level" type="ByteTableFieldDefinition" value="2" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_17" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6fa858b2-3e99-439e-8215-db683f5d2448" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="55f39606-741b-40cb-a17f-b6be6346fd27" />
+        <field name="FSName" type="StringTableFieldDefinition" value="BloodArcher" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="BloodShotUnlock;BloodArcherAnatomy" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ac71b00d-e434-4a19-8b2c-14ba6f57df62,3,BloodArcher)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodShot, 1, 0);ActionResource(BloodShot_Charge, 1, 0);ProficiencyBonus(Skill,Arcana);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_174" />
+        <field name="UUID" type="IdTableFieldDefinition" value="eac53675-02d8-4c14-b5fd-05ca65c0d78f" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="55f39606-741b-40cb-a17f-b6be6346fd27" />
+        <field name="FSName" type="StringTableFieldDefinition" value="BloodArcher" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="BloodArrow" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_265" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c74e9029-b224-4d0d-b397-89777c17979f" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="55f39606-741b-40cb-a17f-b6be6346fd27" />
+        <field name="FSName" type="StringTableFieldDefinition" value="BloodArcher" />
+        <field name="Level" type="ByteTableFieldDefinition" value="10" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ac71b00d-e434-4a19-8b2c-14ba6f57df62,1,BloodArcher)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="BloodRecall" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="89e486d9-f4be-432c-b41d-76301de34f28" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="55f39606-741b-40cb-a17f-b6be6346fd27" />
+        <field name="FSName" type="StringTableFieldDefinition" value="BloodArcher" />
+        <field name="Level" type="ByteTableFieldDefinition" value="15" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="BloodCreation" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ac71b00d-e434-4a19-8b2c-14ba6f57df62,1,BloodArcher)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9f197127-65df-458b-a94f-e5606b338f44" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="55f39606-741b-40cb-a17f-b6be6346fd27" />
+        <field name="FSName" type="StringTableFieldDefinition" value="BloodArcher" />
+        <field name="Level" type="ByteTableFieldDefinition" value="18" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ac71b00d-e434-4a19-8b2c-14ba6f57df62,1,BloodArcher)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
